@@ -1,9 +1,10 @@
 name       : python-enum34
-version    : 1.1.2
-release    : 1
+version    : 1.1.6
+release    : 2
 source     :
-    - https://pypi.python.org/packages/source/e/enum34/enum34-1.1.2.tar.gz : 2475d7fcddf5951e92ff546972758802de5260bf409319a9f1934e6bbc8b1dc7
+    - https://pypi.python.org/packages/bf/3e/31d502c25302814a7c2f1d3959d2a3b3f78e509002ba91aea64993936876/enum34-1.1.6.tar.gz : 8ad8c4783bf61ded74527bffb48ed9b54166685e4230386a9ed9b1279e2df5b1
 license    : BSD-Clause
+component  : programming.python
 summary    : Python 3.4 Enum backport
 description: |
     Python 3.4 Enum backport
@@ -11,6 +12,6 @@ builddeps  :
     - pkgconfig(python-2.7)
     - python-setuptools
 build      : |
-    python setup.py build
+    %python_setup
 install    : |
-    python setup.py install --root=%installroot% --no-compile -O0
+    %python_install
